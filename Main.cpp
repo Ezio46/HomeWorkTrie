@@ -4,7 +4,6 @@
 #include <string>
 #include <locale>
 
-
 using namespace std;
 using namespace std::chrono;
 
@@ -178,7 +177,7 @@ int main() {
     Trie trie;
     HashTable hashTable;
 
-    // Добавление 100 элементов
+    // Р”РѕР±Р°РІР»РµРЅРёРµ 100 СЌР»РµРјРµРЅС‚РѕРІ
     auto start = high_resolution_clock::now();
     for (int i = 0; i < 100; i++) {
         string key = "key" + to_string(i);
@@ -200,7 +199,7 @@ int main() {
     auto duration = duration_cast<microseconds>(stop - start);
     cout << "Time for inserting 100 elements: " << duration.count() << " mcs" << endl;
 
-    // Поиск 100 элементов
+    // РџРѕРёСЃРє 100 СЌР»РµРјРµРЅС‚РѕРІ
     start = high_resolution_clock::now();
     for (int i = 0; i < 100; i++) {
         string key = "key" + to_string(i);
@@ -222,7 +221,7 @@ int main() {
     duration = duration_cast<microseconds>(stop - start);
     cout << "Time for searching 100 elements: " << duration.count() << " mcs" << endl;
 
-    // Удаление 100 элементов
+    // РЈРґР°Р»РµРЅРёРµ 100 СЌР»РµРјРµРЅС‚РѕРІ
     start = high_resolution_clock::now();
     for (int i = 0; i < 100; i++) {
         string key = "key" + to_string(i);
